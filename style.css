@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box; /* Add box-sizing to include padding and borders in width and height */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    text-align: left; /* Add text-align to align label text */
+}
+
+input, select {
+    margin-top: 5px;
+    padding: 8px;
+    width: 100%;
+    max-width: 300px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#reservations { /* Corrected typo from #reservas to #reservations */
+    border: 1px solid #ccc;
+    padding: 10px;
+    max-width: 400px;
+}
+
+/* Removed .table, .row, and .cell classes as they are not being used */

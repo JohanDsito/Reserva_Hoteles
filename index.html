@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Reserva de Habitaciones</title>
+    <link rel="stylesheet" href="style.css"> 
+    <script src="script.js" defer></script> 
+</head>
+<body>
+    <h1>Sistema de Reserva de Habitaciones</h1>
+    <form id="reservationForm" action="#"> 
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" required>
+
+        <label for="documentNumber">Número de Documento:</label>
+        <input type="text" id="documentNumber" required>
+
+        <label for="phoneNumber">Teléfono:</label>
+        <input type="text" id="phoneNumber" required>
+
+        <label for="roomType">Tipo de Habitación:</label>
+        <select id="roomType" required>
+            <option value="individual">Individual</option>
+            <option value="doble">Doble</option>
+            <option value="suite">Suite</option>
+        </select>
+
+        <label for="checkInDate">Fecha de Llegada:</label>
+        <input type="date" id="checkInDate" required>
+
+        <label for="checkOutDate">Fecha de Salida:</label>
+        <input type="date" id="checkOutDate" required>
+
+        <button type="button" onclick="reserveRoom()" alt="Reservar Habitación">Reservar</button> 
+    </form>
+
+    <h2>Reservas</h2>
+    <div id="reservations"></div>
+</body>
+</html>
